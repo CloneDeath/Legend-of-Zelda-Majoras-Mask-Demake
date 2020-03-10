@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/Items/Keys/Key1.png" type="Texture" id=1]
+[ext_resource path="res://Entities/Player/HUD/Key1Indicator.cs" type="Script" id=2]
+
+[node name="Key1Indicator" type="Sprite"]
+texture = ExtResource( 1 )
+offset = Vector2( 0.5, 0.5 )
+script = ExtResource( 2 )

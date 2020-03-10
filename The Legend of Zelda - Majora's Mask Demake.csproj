@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Tools</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D50152B-491A-41DA-81D3-A78731828E86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <OutputPath>.mono\temp\bin\$(Configuration)</OutputPath>
+    <RootNamespace>TheLegendofZeldaMajorasMaskDemake</RootNamespace>
+    <AssemblyName>The Legend of Zelda - Majora's Mask Demake</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <GodotProjectGeneratorVersion>1.0.7333.3918</GodotProjectGeneratorVersion>
+    <BaseIntermediateOutputPath>.mono\temp\obj</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)\$(Configuration)</IntermediateOutputPath>
+    <ApiConfiguration Condition=" '$(Configuration)' != 'Release' ">Debug</ApiConfiguration>
+    <ApiConfiguration Condition=" '$(Configuration)' == 'Release' ">Release</ApiConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>$(GodotDefineConstants);GODOT;DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <DefineConstants>$(GodotDefineConstants);GODOT;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Tools|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <DefineConstants>$(GodotDefineConstants);GODOT;DEBUG;TOOLS;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GodotSharp">
+      <Private>False</Private>
+      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GodotSharpEditor" Condition=" '$(Configuration)' == 'Tools' ">
+      <Private>False</Private>
+      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharpEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\GridAlignedCamera\GridAlignedCamera.cs" />
+    <Compile Include="Engine\GridAlignedCamera\GridAlignedCamera.designer.cs" />
+    <Compile Include="Engine\GridAlignedCamera\TransitionAction.cs" />
+    <Compile Include="Entities\BaseEntity\BaseEntity.cs" />
+    <Compile Include="Entities\BaseEntity\BaseEntity.designer.cs" />
+    <Compile Include="Entities\Boulder\Boulder.cs" />
+    <Compile Include="Entities\Door\Door.cs" />
+    <Compile Include="Entities\Enemies\Bat\Bat.cs" />
+    <Compile Include="Entities\Enemies\Bat\Bat.designer.cs" />
+    <Compile Include="Entities\Enemies\Slime\GiantSlime.cs" />
+    <Compile Include="Entities\Enemies\Slime\Slime.cs" />
+    <Compile Include="Entities\Enemies\Slime\Slime.designer.cs" />
+    <Compile Include="Entities\Enemies\Worm\Worm.cs" />
+    <Compile Include="Entities\Enemies\Worm\Worm.designer.cs" />
+    <Compile Include="Entities\IDamageable.cs" />
+    <Compile Include="Entities\IHammerable.cs" />
+    <Compile Include="Entities\IItemPickup.cs" />
+    <Compile Include="Entities\IPushable.cs" />
+    <Compile Include="Entities\Items\Hammer\Hammer.cs" />
+    <Compile Include="Entities\Items\Heart\Heart.cs" />
+    <Compile Include="Entities\Items\Keys\Key1.cs" />
+    <Compile Include="Entities\Items\MaxHealthUp\MaxHealthUp.cs" />
+    <Compile Include="Entities\Items\Sword\Sword.cs" />
+    <Compile Include="Entities\LockedBlock\LockedBlock.cs" />
+    <Compile Include="Entities\Player\HUD\HammerIndicator.cs" />
+    <Compile Include="Entities\Player\HUD\HeartContainer.cs" />
+    <Compile Include="Entities\Player\HUD\Key1Indicator.cs" />
+    <Compile Include="Entities\Player\HUD\SwordIndicator.cs" />
+    <Compile Include="Entities\Player\Player.cs" />
+    <Compile Include="Entities\Player\Player.designer.cs" />
+    <Compile Include="Entities\Player\PlayerAnimation.cs" />
+    <Compile Include="Entities\Player\PlayerInput.cs" />
+    <Compile Include="Entities\PushableBarrel\PushableBarrel.cs" />
+    <Compile Include="Entities\PushableBarrel\PushableBarrel.designer.cs" />
+    <Compile Include="Entities\Switch\Switch.cs" />
+    <Compile Include="Entities\Teleporter\Teleporter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Title\MainMenu.cs" />
+    <Compile Include="Title\MainMenu.designer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

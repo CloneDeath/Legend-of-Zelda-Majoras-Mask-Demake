@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Entities/Items/Sword/Sword.png" type="Texture" id=1]
+[ext_resource path="res://Entities/BaseEntity/BaseEntity.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/Items/Sword/Sword.cs" type="Script" id=3]
+
+[node name="Sword" instance=ExtResource( 2 )]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 1 )
+offset = Vector2( 0, -2 )

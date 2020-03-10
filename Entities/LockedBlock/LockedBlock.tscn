@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Entities/LockedBlock/LockedBlock.png" type="Texture" id=1]
+[ext_resource path="res://Entities/BaseEntity/BaseEntity.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Entities/LockedBlock/LockedBlock.cs" type="Script" id=3]
+[ext_resource path="res://Entities/Door/DoorOpenSound.ogg" type="AudioStream" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 6.5, 4.5 )
+
+[node name="LockedBlock" instance=ExtResource( 2 )]
+collision_layer = 84
+collision_mask = 0
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 1 )
+offset = Vector2( 0.5, 0.5 )
+
+[node name="CollisionShape2D" parent="." index="2"]
+position = Vector2( 0.5, 0.5 )
+shape = SubResource( 1 )
+
+[node name="OpenSound" type="AudioStreamPlayer" parent="." index="6"]
+stream = ExtResource( 4 )

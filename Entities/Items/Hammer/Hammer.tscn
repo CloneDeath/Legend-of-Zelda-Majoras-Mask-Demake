@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Entities/BaseEntity/BaseEntity.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Entities/Items/Hammer/Hammer.png" type="Texture" id=2]
+[ext_resource path="res://Entities/Items/Hammer/Hammer.cs" type="Script" id=3]
+
+[node name="Hammer" instance=ExtResource( 1 )]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource( 3 )
+
+[node name="Sprite" parent="." index="0"]
+texture = ExtResource( 2 )
+offset = Vector2( 0.5, -4.5 )
