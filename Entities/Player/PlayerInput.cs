@@ -1,6 +1,6 @@
 ﻿using Godot;
 
-namespace LegendsOfLove.Entities.Player {
+namespace LoZMM.Entities.Player {
 	public class PlayerInput {
 		private readonly bool _frozen;
 

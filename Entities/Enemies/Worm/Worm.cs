@@ -1,7 +1,7 @@
 using Godot;
-using LegendsOfLove.Entities.Items.MaxHealthUp;
+using LoZMM.Entities.Items.MaxHealthUp;
 
-namespace LegendsOfLove.Entities.Enemies.Worm {
+namespace LoZMM.Entities.Enemies.Worm {
 	public partial class Worm : BaseEntity.BaseEntity, IHammerable {
 		[Export] public bool DropsMaxHeartOnDeath { get; set; } = true;
 		

@@ -1,7 +1,7 @@
 ﻿using Godot;
-using LegendsOfLove.Entities.Player;
+using LoZMM.Entities.Player;
 
-namespace LegendsOfLove.Engine.GridAlignedCamera {
+namespace LoZMM.Engine.GridAlignedCamera {
 	public class TransitionAction {
 		public Player Player { get; }
 		public Vector2 Direction { get; }

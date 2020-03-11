@@ -1,7 +1,7 @@
 using Godot;
-using LegendsOfLove.Entities.Items.Keys;
+using LoZMM.Entities.Items.Keys;
 
-namespace LegendsOfLove.Entities.Enemies.Slime {
+namespace LoZMM.Entities.Enemies.Slime {
 	public class GiantSlime : Slime {
 		[Export] public bool DropsKeyOnDeath { get; set; } = true;
 

@@ -1,6 +1,6 @@
 ﻿using Godot;
 
-namespace LegendsOfLove.Entities.BaseEntity {
+namespace LoZMM.Entities.BaseEntity {
 	public partial class BaseEntity {
 		protected Sprite Sprite => GetNode<Sprite>("Sprite");
 		protected Sprite DeathSprite => GetNode<Sprite>("DeathSprite");

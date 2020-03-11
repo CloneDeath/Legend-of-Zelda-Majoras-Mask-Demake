@@ -1,14 +1,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using Godot;
-using LegendsOfLove.Entities.BaseEntity;
-using LegendsOfLove.Entities.Player;
+using LoZMM.Entities.BaseEntity;
+using LoZMM.Entities.Player;
 
-namespace LegendsOfLove.Engine.GridAlignedCamera {
+namespace LoZMM.Engine.GridAlignedCamera {
+	[Tool]
 	public partial class GridAlignedCamera : Node2D {
+		[Export] public Vector2 CellSize { get; set; } = new Vector2(16, 16) * new Vector2(10, 8);
+		
 		protected Queue<TransitionAction> TransitionQueue = new Queue<TransitionAction>();
 
+		public override void _Ready() {
+			ContentsShape.Shape = new RectangleShape2D {
+				Extents = CellSize / 2
+			};
+			ContentsShape.Position = CellSize / 2;
+		}
+
 		public override void _PhysicsProcess(float delta) {
+			if (Godot.Engine.EditorHint) return;
 			Camera2D.GlobalPosition = GlobalPosition.Round();
 			CheckForTransitions();
 		}
@@ -34,7 +45,7 @@ namespace LegendsOfLove.Engine.GridAlignedCamera {
 		protected bool CanTransition => !Tween.IsActive();
 
 		protected List<BaseEntity> GetCurrentEntitiesOnScreen() {
-			var rect = new Rect2(GlobalPosition, 72, 48);
+			var rect = new Rect2(GlobalPosition, CellSize);
 			var entities = GetTree().GetNodesInGroup("entity").Cast<BaseEntity>();
 			return entities.Where(entity => rect.HasPoint(entity.GlobalPosition)).ToList();
 		}
@@ -47,7 +58,7 @@ namespace LegendsOfLove.Engine.GridAlignedCamera {
 				entity.Freeze();
 			}
 
-			var delta = direction * new Vector2(72, 48);
+			var delta = direction * CellSize;
 			Tween.InterpolateProperty(this, nameof(Position),
 				Position, Position + delta, 1);
 
@@ -85,8 +96,8 @@ namespace LegendsOfLove.Engine.GridAlignedCamera {
 				}
 				
 				var playerPosition = player.GlobalPosition;
-				var playerCell = new Vector2(playerPosition.x / 72, playerPosition.y / 48).Floor();
-				GlobalPosition = playerCell * new Vector2(72, 48);
+				var playerCell = (playerPosition / CellSize).Floor();
+				GlobalPosition = playerCell * CellSize;
 				
 				var newEntities = GetCurrentEntitiesOnScreen();
 				foreach (var entity in newEntities) {

@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities.Boulder {
+namespace LoZMM.Entities.Boulder {
 	public class Boulder : BaseEntity.BaseEntity, IHammerable
 	{
 		public void Hammer(Vector2 direction) {

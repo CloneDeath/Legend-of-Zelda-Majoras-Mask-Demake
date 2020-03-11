@@ -1,12 +1,12 @@
 using System.Linq;
 using Godot;
 
-namespace LegendsOfLove.Entities.Enemies.Bat {
+namespace LoZMM.Entities.Enemies.Bat {
 	public partial class Bat : BaseEntity.BaseEntity, IHammerable {
 		[Export] public float Speed = 16f;
 		protected Vector2 Direction;
 
-		protected float _changeDirections;
+		protected float ChangeDirections;
 
 		public override void Unfreeze() {
 			base.Unfreeze();
@@ -19,7 +19,7 @@ namespace LegendsOfLove.Entities.Enemies.Bat {
 		}
 
 		protected void RandomizeDirection() {
-			_changeDirections = (GD.Randi() % 3) + 1;
+			ChangeDirections = (GD.Randi() % 3) + 1;
 			var player = GetTree().GetNodesInGroup("player").Cast<Player.Player>().FirstOrDefault();
 			
 			var delta = GetVariance();
@@ -37,8 +37,8 @@ namespace LegendsOfLove.Entities.Enemies.Bat {
 			}
 			else {
 				AnimationPlayer.Play();
-				_changeDirections -= delta;
-				if (_changeDirections <= 0) {
+				ChangeDirections -= delta;
+				if (ChangeDirections <= 0) {
 					RandomizeDirection();
 				}
 			}

@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities.PushableBarrel {
+namespace LoZMM.Entities.PushableBarrel {
 	public partial class PushableBarrel : BaseEntity.BaseEntity, IPushable {
 		public override void _Process(float delta) {
 			if (IsFrozen) {

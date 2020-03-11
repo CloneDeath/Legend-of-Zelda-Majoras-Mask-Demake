@@ -1,5 +1,5 @@
-﻿namespace LegendsOfLove.Entities {
+﻿namespace LoZMM.Entities {
 	public interface IItemPickup {
-		void OnPickup(Player.Player player);
+		void OnPickup(LoZMM.Entities.Player.Player player);
 	}
 }

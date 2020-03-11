@@ -1,7 +1,7 @@
 using System.Linq;
 using Godot;
 
-namespace LegendsOfLove.Entities.Player.HUD {
+namespace LoZMM.Entities.Player.HUD {
 	public class HeartContainer : Node2D {
 		public Player GetPlayer() => GetTree().GetNodesInGroup("player").Cast<Player>().FirstOrDefault();
 

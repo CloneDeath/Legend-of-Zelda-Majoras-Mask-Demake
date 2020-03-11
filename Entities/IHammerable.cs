@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities {
+namespace LoZMM.Entities {
 	public interface IHammerable {
 		void Hammer(Vector2 direction);
 	}

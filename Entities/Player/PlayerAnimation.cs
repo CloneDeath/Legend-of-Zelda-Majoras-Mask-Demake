@@ -1,7 +1,7 @@
 using System;
 using Godot;
 
-namespace LegendsOfLove.Entities.Player {
+namespace LoZMM.Entities.Player {
 	public class PlayerAnimation : AnimationPlayer
 	{
 		public void SetAnimation(string type, Vector2 direction) {

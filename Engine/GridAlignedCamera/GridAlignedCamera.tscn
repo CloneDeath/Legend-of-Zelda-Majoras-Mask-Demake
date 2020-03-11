@@ -4,7 +4,7 @@
 [ext_resource path="res://Engine/ScreenDither/ScreenDither.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 36, 24 )
+extents = Vector2( 80, 64 )
 
 [sub_resource type="SegmentShape2D" id=2]
 b = Vector2( 72, 0 )
@@ -63,8 +63,8 @@ editor_draw_screen = false
 [node name="ContentsArea2D" type="Area2D" parent="."]
 collision_layer = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ContentsArea2D"]
-position = Vector2( 36, 24 )
+[node name="ContentsShape" type="CollisionShape2D" parent="ContentsArea2D"]
+position = Vector2( 80, 64 )
 shape = SubResource( 1 )
 
 [node name="TopArea2D" type="Area2D" parent="."]

@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities.Door {
+namespace LoZMM.Entities.Door {
 	public class Door : BaseEntity.BaseEntity {
 		[Export] public bool DeleteOnActivate { get; set; }
 		[Export] public bool ActivationOpens { get; set; } = false;

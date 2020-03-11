@@ -6,7 +6,7 @@
     <ProjectGuid>{6D50152B-491A-41DA-81D3-A78731828E86}</ProjectGuid>
     <OutputType>Library</OutputType>
     <OutputPath>.mono\temp\bin\$(Configuration)</OutputPath>
-    <RootNamespace>TheLegendofZeldaMajorasMaskDemake</RootNamespace>
+    <RootNamespace>LoZMM</RootNamespace>
     <AssemblyName>The Legend of Zelda - Majora's Mask Demake</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <GodotProjectGeneratorVersion>1.0.7333.3918</GodotProjectGeneratorVersion>

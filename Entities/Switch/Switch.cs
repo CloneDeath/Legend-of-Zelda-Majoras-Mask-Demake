@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities.Switch {
+namespace LoZMM.Entities.Switch {
 	public class Switch : Area2D {
 		[Signal] public delegate void Pressed();
 		[Signal] public delegate void Released();

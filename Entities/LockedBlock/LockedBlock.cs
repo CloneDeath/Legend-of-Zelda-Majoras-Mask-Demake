@@ -1,10 +1,10 @@
 using System.Linq;
 using Godot;
 
-namespace LegendsOfLove.Entities.LockedBlock {
+namespace LoZMM.Entities.LockedBlock {
 	public class LockedBlock : BaseEntity.BaseEntity, IPushable
 	{
-		public Player.Player GetPlayer() => GetTree().GetNodesInGroup("player").Cast<Player.Player>().FirstOrDefault();
+		public Entities.Player.Player GetPlayer() => GetTree().GetNodesInGroup("player").Cast<Entities.Player.Player>().FirstOrDefault();
 
 		protected AudioStreamPlayer OpenSound => GetNode<AudioStreamPlayer>("OpenSound");
 

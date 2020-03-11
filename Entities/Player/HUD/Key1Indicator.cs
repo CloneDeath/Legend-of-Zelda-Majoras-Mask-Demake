@@ -1,7 +1,7 @@
 using System.Linq;
 using Godot;
 
-namespace LegendsOfLove.Entities.Player.HUD {
+namespace LoZMM.Entities.Player.HUD {
 	public class Key1Indicator : Sprite
 	{
 		public Player GetPlayer() => GetTree().GetNodesInGroup("player").Cast<Player>().FirstOrDefault();

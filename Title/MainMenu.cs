@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Title {
+namespace LoZMM.Title {
 	public partial class MainMenu : Control {
 		private bool _triggered;
 

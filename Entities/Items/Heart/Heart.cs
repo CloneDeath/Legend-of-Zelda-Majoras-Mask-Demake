@@ -1,6 +1,6 @@
 using System;
 
-namespace LegendsOfLove.Entities.Items.Heart {
+namespace LoZMM.Entities.Items.Heart {
 	public class Heart : BaseEntity.BaseEntity, IItemPickup
 	{
 		public override void _Ready() {
@@ -11,7 +11,7 @@ namespace LegendsOfLove.Entities.Items.Heart {
 			QueueFree();
 		}
 
-		public void OnPickup(Player.Player player) {
+		public void OnPickup(Entities.Player.Player player) {
 			player.Health = Math.Min(player.Health + 1, player.MaxHealth);
 			player.PickupHeartSound.Play();
 			QueueFree();

@@ -1,6 +1,7 @@
 ﻿using Godot;
+using LoZMM.Entities.Player;
 
-namespace LegendsOfLove.Entities.Player {
+namespace LoZMM.Entities.Player {
 	public partial class Player {
 		protected Sprite Gravestone => GetNode<Sprite>("Gravestone");
 		protected PlayerAnimation PlayerAnimation => GetNode<PlayerAnimation>("PlayerAnimation");

@@ -1,6 +1,6 @@
 ﻿using Godot;
 
-namespace LegendsOfLove.Entities {
+namespace LoZMM.Entities {
 	public interface IPushable {
 		void Push(Vector2 direction);
 	}

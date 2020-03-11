@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities {
+namespace LoZMM.Entities {
 	public interface IDamageable {
 		void Damage(Vector2 direction);
 	}

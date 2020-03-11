@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities.Enemies.Slime {
+namespace LoZMM.Entities.Enemies.Slime {
 	public partial class Slime : BaseEntity.BaseEntity, IHammerable {
 		private float _changeDirection;
 		private Vector2 _direction;

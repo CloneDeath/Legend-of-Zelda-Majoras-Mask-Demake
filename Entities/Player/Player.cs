@@ -1,8 +1,8 @@
 using System.Linq;
 using Godot;
-using LegendsOfLove.Engine.GridAlignedCamera;
+using LoZMM.Engine.GridAlignedCamera;
 
-namespace LegendsOfLove.Entities.Player {
+namespace LoZMM.Entities.Player {
 	public partial class Player : BaseEntity.BaseEntity {
 		protected GridAlignedCamera Camera => GetTree().GetNodesInGroup("camera")[0] as GridAlignedCamera;
 		[Export] public bool DisableInput { get; set; }

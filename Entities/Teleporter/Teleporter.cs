@@ -1,6 +1,6 @@
 using Godot;
 
-namespace LegendsOfLove.Entities.Teleporter {
+namespace LoZMM.Entities.Teleporter {
 	public class Teleporter : Area2D
 	{
 		[Export] public NodePath Destination { get; set; }
@@ -8,7 +8,7 @@ namespace LegendsOfLove.Entities.Teleporter {
 		protected AudioStreamPlayer TeleportSound => GetNode<AudioStreamPlayer>("TeleportSound");
 
 		public void _on_Teleporter_body_entered(Node body) {
-			if (!(body is Player.Player player)) return;
+			if (!(body is LoZMM.Entities.Player.Player player)) return;
 
 			var destination = GetNode<Node2D>(Destination);
 			player.TeleportTo(destination.GlobalPosition);

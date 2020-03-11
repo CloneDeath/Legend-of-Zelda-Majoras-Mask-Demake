@@ -1,7 +1,7 @@
 using Godot;
-using LegendsOfLove.Entities.Items.Heart;
+using LoZMM.Entities.Items.Heart;
 
-namespace LegendsOfLove.Entities.BaseEntity {
+namespace LoZMM.Entities.BaseEntity {
 	public partial class BaseEntity : KinematicBody2D, IDamageable {
 		[Signal] public delegate void Death();
 		[Export] public bool DropHeartOnDeath { get; set; }
