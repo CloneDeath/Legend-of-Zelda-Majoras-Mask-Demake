@@ -11,35 +11,35 @@
 [node name="Main" type="Node2D"]
 
 [node name="WorldView" type="ViewportContainer" parent="."]
-margin_right = 72.0
-margin_bottom = 48.0
+margin_right = 160.0
+margin_bottom = 128.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Viewport" type="Viewport" parent="WorldView"]
-size = Vector2( 72, 48 )
+size = Vector2( 160, 128 )
 handle_input_locally = false
 render_target_update_mode = 3
 
 [node name="World" parent="WorldView/Viewport" instance=ExtResource( 1 )]
 
 [node name="HUD" type="ViewportContainer" parent="."]
-margin_left = 72.0
-margin_right = 84.0
-margin_bottom = 48.0
+margin_top = 128.0
+margin_right = 160.0
+margin_bottom = 176.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Viewport" type="Viewport" parent="HUD"]
-size = Vector2( 12, 48 )
+size = Vector2( 160, 16 )
 handle_input_locally = false
 render_target_update_mode = 3
 
 [node name="ColorRect" type="ColorRect" parent="HUD/Viewport"]
-margin_right = 12.0
-margin_bottom = 48.0
+margin_right = 160.0
+margin_bottom = 16.0
 color = Color( 0.780392, 0.941176, 0.847059, 1 )
 
 [node name="Camera2D" type="Camera2D" parent="HUD/Viewport"]

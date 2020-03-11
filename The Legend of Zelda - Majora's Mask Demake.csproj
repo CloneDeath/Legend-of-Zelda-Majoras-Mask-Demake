@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Engine\GridAlignedCamera\GridAlignedCamera.cs" />
     <Compile Include="Engine\GridAlignedCamera\GridAlignedCamera.designer.cs" />
+    <Compile Include="Engine\GridAlignedCamera\NonPlayerEntityBounds.cs" />
     <Compile Include="Engine\GridAlignedCamera\TransitionAction.cs" />
     <Compile Include="Entities\BaseEntity\BaseEntity.cs" />
     <Compile Include="Entities\BaseEntity\BaseEntity.designer.cs" />

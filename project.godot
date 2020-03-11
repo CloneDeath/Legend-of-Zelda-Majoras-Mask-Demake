@@ -78,6 +78,17 @@ move_right={
  ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Enemy"
+2d_physics/layer_3="BlocksMovement"
+2d_physics/layer_4="Item"
+2d_physics/layer_5="Pushable"
+2d_physics/layer_6="Resetable"
+2d_physics/layer_7="BlocksNonPlayerMovement"
+2d_physics/layer_8="BlocksNonPlayerAir"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
