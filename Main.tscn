@@ -40,7 +40,7 @@ render_target_update_mode = 3
 [node name="ColorRect" type="ColorRect" parent="HUD/Viewport"]
 margin_right = 160.0
 margin_bottom = 16.0
-color = Color( 0.780392, 0.941176, 0.847059, 1 )
+color = Color( 0.956863, 0.823529, 0.611765, 1 )
 
 [node name="Camera2D" type="Camera2D" parent="HUD/Viewport"]
 anchor_mode = 0
