@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CliffStairs.png-6eb6d4c6ab3da12405314dcc50b04812.stex"
+path="res://.import/RoadTiles.png-d456a4791064ec1497f59c6533b8d972.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Environments/Overworld/CliffStairs.png"
-dest_files=[ "res://.import/CliffStairs.png-6eb6d4c6ab3da12405314dcc50b04812.stex" ]
+source_file="res://Environments/Overworld/RoadTiles.png"
+dest_files=[ "res://.import/RoadTiles.png-d456a4791064ec1497f59c6533b8d972.stex" ]
 
 [params]
 

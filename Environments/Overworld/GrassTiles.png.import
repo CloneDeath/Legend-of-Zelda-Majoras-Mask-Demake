@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Waves.png-768b8de1c0b2719c262007130047460b.stex"
+path="res://.import/GrassTiles.png-84e73138c22434125cd6e8f1d12cf4ae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Environments/Overworld/Waves.png"
-dest_files=[ "res://.import/Waves.png-768b8de1c0b2719c262007130047460b.stex" ]
+source_file="res://Environments/Overworld/GrassTiles.png"
+dest_files=[ "res://.import/GrassTiles.png-84e73138c22434125cd6e8f1d12cf4ae.stex" ]
 
 [params]
 
