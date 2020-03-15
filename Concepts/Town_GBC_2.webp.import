@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Town_GBC_2.webp-bbbf74e8b20d20b6872d7046c54b7717.stex"
+path="res://.import/Town_GBC_2.webp-cf5e7683d7a5f50db3419ebe3c9cb1fc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Town_GBC_2.webp"
-dest_files=[ "res://.import/Town_GBC_2.webp-bbbf74e8b20d20b6872d7046c54b7717.stex" ]
+source_file="res://Concepts/Town_GBC_2.webp"
+dest_files=[ "res://.import/Town_GBC_2.webp-cf5e7683d7a5f50db3419ebe3c9cb1fc.stex" ]
 
 [params]
 

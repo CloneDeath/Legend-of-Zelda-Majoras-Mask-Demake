@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Town_GB_GBC.png-a8e94fb160162d9a69431ba9010368c8.stex"
+path="res://.import/Town_GB_GBC.png-408acb613870d260737a6b35ee1e2e6e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Town_GB_GBC.png"
-dest_files=[ "res://.import/Town_GB_GBC.png-a8e94fb160162d9a69431ba9010368c8.stex" ]
+source_file="res://Concepts/Town_GB_GBC.png"
+dest_files=[ "res://.import/Town_GB_GBC.png-408acb613870d260737a6b35ee1e2e6e.stex" ]
 
 [params]
 

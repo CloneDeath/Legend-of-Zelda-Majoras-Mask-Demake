@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Town_3D.webp-ca97341e61bd8a9507b5c952f83e3a2b.stex"
+path="res://.import/Town_3D.webp-0a103b7e27c875bb745af161cea8eee2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Town_3D.webp"
-dest_files=[ "res://.import/Town_3D.webp-ca97341e61bd8a9507b5c952f83e3a2b.stex" ]
+source_file="res://Concepts/Town_3D.webp"
+dest_files=[ "res://.import/Town_3D.webp-0a103b7e27c875bb745af161cea8eee2.stex" ]
 
 [params]
 

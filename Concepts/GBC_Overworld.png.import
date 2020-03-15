@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GBC_Overworld.png-ee3eb07ab03e2dff26529a9f0258603e.stex"
+path="res://.import/GBC_Overworld.png-fc0812ec0c5ee2a76d73f66f6adc4021.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/GBC_Overworld.png"
-dest_files=[ "res://.import/GBC_Overworld.png-ee3eb07ab03e2dff26529a9f0258603e.stex" ]
+source_file="res://Concepts/GBC_Overworld.png"
+dest_files=[ "res://.import/GBC_Overworld.png-fc0812ec0c5ee2a76d73f66f6adc4021.stex" ]
 
 [params]
 
