@@ -1364,8 +1364,8 @@ radius = 4.0
 [sub_resource type="CircleShape2D" id=28]
 radius = 3.0
 
-[sub_resource type="RectangleShape2D" id=29]
-extents = Vector2( 6, 4 )
+[sub_resource type="CircleShape2D" id=29]
+radius = 5.0
 
 [node name="Player" groups=[
 "player",
@@ -1458,7 +1458,8 @@ modulate = Color( 1, 0, 0, 1 )
 shape = SubResource( 28 )
 
 [node name="CollisionShape2D" parent="." index="10"]
-position = Vector2( 0, 3 )
+position = Vector2( 0, 2 )
+rotation = 1.5708
 shape = SubResource( 29 )
 
 [node name="ResetPlayerTween" type="Tween" parent="." index="13"]
