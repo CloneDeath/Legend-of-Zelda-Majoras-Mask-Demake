@@ -4,4 +4,4 @@
 
 [node name="Heart" type="Sprite"]
 texture = ExtResource( 1 )
-hframes = 2
+hframes = 5

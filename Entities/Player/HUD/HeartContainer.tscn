@@ -7,33 +7,46 @@
 script = ExtResource( 2 )
 
 [node name="Heart0" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2.5, 2.5 )
-frame = 1
+position = Vector2( 4, 4 )
+frame = 4
 
 [node name="Heart1" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2.5, 8.5 )
-frame = 1
+position = Vector2( 12, 4 )
+frame = 4
 
 [node name="Heart2" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 2.5, 14.5 )
+position = Vector2( 20, 4 )
+frame = 4
 
 [node name="Heart3" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 2.5, 20.5 )
+position = Vector2( 28, 4 )
 
 [node name="Heart4" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 8.5, 2.5 )
+position = Vector2( 36, 4 )
 
 [node name="Heart5" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 8.5, 8.5 )
+position = Vector2( 44, 4 )
 
 [node name="Heart6" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 8.5, 14.5 )
+position = Vector2( 52, 4 )
 
 [node name="Heart7" parent="." instance=ExtResource( 1 )]
-visible = false
-position = Vector2( 8.5, 20.5 )
+position = Vector2( 4, 12 )
+
+[node name="Heart8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 12, 12 )
+
+[node name="Heart9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 20, 12 )
+
+[node name="Heart10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 28, 12 )
+
+[node name="Heart11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 36, 12 )
+
+[node name="Heart12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 44, 12 )
+
+[node name="Heart13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 52, 12 )

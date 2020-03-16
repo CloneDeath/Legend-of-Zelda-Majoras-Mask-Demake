@@ -10,10 +10,19 @@ namespace LoZMM.Entities.Player.HUD {
 			if (player == null) return;
 
 			for (var i = 0; i < GetChildCount(); i++) {
-				var value = i + 1;
+				var minValue = i*4 + 1;
 				var heart = GetChild<Sprite>(i);
-				heart.Visible = player.MaxHealth >= value;
-				heart.Frame = player.Health >= value ? 1 : 0;
+				heart.Visible = player.MaxHealth >= minValue;
+
+				if (player.Health >= minValue + 4) {
+					heart.Frame = 4;
+				}
+				else if (player.Health <= minValue - 1) {
+					heart.Frame = 0;
+				}
+				else {
+					heart.Frame = player.Health - minValue + 1;
+				}
 			}
 		}
 	}
