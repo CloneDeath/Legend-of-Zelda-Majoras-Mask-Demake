@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://World.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Entities/Player/HUD/HeartContainer.tscn" type="PackedScene" id=2]
@@ -7,6 +7,12 @@
 [ext_resource path="res://Entities/Player/HUD/Hammer.png" type="Texture" id=5]
 [ext_resource path="res://Entities/Player/HUD/SwordIndicator.cs" type="Script" id=6]
 [ext_resource path="res://Entities/Player/HUD/HammerIndicator.cs" type="Script" id=7]
+[ext_resource path="res://Entities/Player/HUD/Equipment.png" type="Texture" id=8]
+[ext_resource path="res://Entities/Player/HUD/RupeeSymbol.png" type="Texture" id=9]
+[ext_resource path="res://Entities/Player/HUD/NumbersFont.ttf" type="DynamicFontData" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 10 )
 
 [node name="Main" type="Node2D"]
 
@@ -46,18 +52,39 @@ color = Color( 0.956863, 0.823529, 0.611765, 1 )
 anchor_mode = 0
 current = true
 
+[node name="Equipment" type="Sprite" parent="HUD/Viewport"]
+texture = ExtResource( 8 )
+centered = false
+
 [node name="HeartContainer" parent="HUD/Viewport" instance=ExtResource( 2 )]
-position = Vector2( 1, 1 )
+position = Vector2( 104, 0 )
 
 [node name="Key1Indicator" parent="HUD/Viewport" instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 5, 44 )
 
 [node name="SwordIndicator" parent="HUD/Viewport" instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 6, 36 )
 texture = ExtResource( 4 )
 script = ExtResource( 6 )
 
 [node name="HammerIndicator" parent="HUD/Viewport" instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 6, 40 )
 texture = ExtResource( 5 )
 script = ExtResource( 7 )
+
+[node name="RupeeSymbol" type="Sprite" parent="HUD/Viewport"]
+position = Vector2( 80, 0 )
+texture = ExtResource( 9 )
+centered = false
+
+[node name="RupeeCount" type="Label" parent="HUD/Viewport"]
+margin_left = 80.0
+margin_top = 5.0
+margin_right = 120.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.0784314, 0.0627451, 0.0745098, 1 )
+text = "000"
